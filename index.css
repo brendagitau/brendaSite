@@ -1,0 +1,51 @@
+body{
+    background-color:rgb(2, 2, 41);
+color :white;}
+
+h1,h2,h3{
+    font-family:sans-serif;
+    color: rgb(255, 255, 0) ;
+    text-align: left;
+    }
+    h4{
+        color:darkgoldenrod;
+
+    }
+   
+
+    
+    div{
+        background: gold;
+        width: 300px;
+        height:300px;
+        padding:20px;
+        
+    /*total width =300+30+30+4+40*/
+        margin:20px;
+        color:grey;
+        
+        
+        border:2px;
+        border-color: darkgrey;
+        border-style:dotted;
+        
+
+    }
+    p{ 
+        
+        font-size: medium;
+        color: honeydew;
+        margin: 1rem 0;
+        padding:1rem;
+        text-align: justify;
+        align-content: center;
+
+    }
+    p2{
+        font-family:sans-serif;
+    color: rgb(187, 255, 0) ;
+    text-align: center;   
+    }
+
+
+    

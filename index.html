@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Box Model</title>
+<link type="text/css" rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>WHAT IS A BOX MODEL IN CSS?</h1>
+    <p> 
+        <br> The box model in CSS is a set of rules that determine how your web page is rendered on the internet. <br>
+        In this model, a rectangular box is generated for HTML elements. Each is laid out according to their 
+        <br>dimension, type, positioning, relationship to other elements, and external factors like viewport size. 
+        <br>This box consists of content, padding, a border, and margin.
+        It can be used as a toolkit for customizing the layout of different elements.
+    </p>
+    <p> Here’s an example that illustrates each layer of the CSS box model. We'll be discussing these layers. </p>
+<img src="box model.png" alt="sample box model">
+<img src="box model2.png" alt="sample box model">
+<h2>Box Model Properties</h2>
+<p>Box-Model has multiple properties in CSS. Some of them are given below:<br>
+    <br> In CSS every element is seen as a box.Whether text, image ,title ,button etc. We will be using  the analogy of a house to explain the properties of the box model in CSS.<br>
+
+<img src="homeanalogy.jpg" alt="home analogy"><br><br>
+   
+    <h3>1.) Borders</h3>
+
+    This is the "fence" in our analogy.It seperates us form other external enviroments yet adds to the size of our property.
+   <br>So in css it shows where an elements begins and ends i.e its"personal space".Its width still adds to the the total width of our  element .<br><br>
+   
+   <h3> 2.) Margins</h3>
+
+   This is the space between one element and other elements e.g one button and another.Whatever size of margin is not  included in the total size of the element.
+   Margins collapse between two elements that are next to one another.This means that if the margin in element A is 12px and element B is 40 px,<br>
+   then the distance between the 2 elements will be 40 px. That is the distance between one "house" and another. <br>
+   
+   <h3>3.) Content</h3>
+
+   This is where the content of your element lives e.g text , nested elements etc.<br>
+   Ths is the "house" and width and height properties are applied to the content area by default or manually in css.<br><br>
+   
+   <h3>4.) Padding</h3>
+    
+   This is the space between the content of the element and the border of the element.So its the "lawn" or the area around our house.
+   <br> Its the area between the actual house and the fence.The values for padding are set with the padding property.These values increase the overall width and height of
+   our element in addition to the  height and width set to the  content area.<br><br>
+   
+  
+   <h3> 5.)Box-sizing</h3>
+   The CSS box-sizing property is used to adjust or control the size of any element that accepts a width or height . 
+   It specifies how to calculate the total width and height of that element.
+  It  handy when its time to calculate the total dimention of a box, especially when you dont want an element to exeed a certain size.<br> <br>
+
+</p>
+<h2>Calculating The Dimentions Of a Box Model. </h2><br>
+<P>By default, the CSS box model calculates any element that accepts a width or height in this format:-<br>
+<br>
+    a.) width + padding + border = rendered or displayed width of the element's box.<br><br>
+   b.)  height + padding + border = rendered or displayed height of the element's box.<br><br>
+    This means that whenever you add padding or border to the element, the size of an element will appear bigger than the size originally assigned to it.<br> This is because the content of that element includes the width and height properties but does not include the padding or border property.<br><br>
+    
+    </P>
+    <h4>for example</h4>
+    <p>Below are the dimentions of  a random box model:-<br><br></p>
+       <p2> .first-box {<br>
+        width: 200px;<br>
+        height: 100px;<br>
+        border: 8px solid blue;<br>
+        padding: 20px;<br>
+        background: yellow;<br>
+        /* Total width: 200px + (2 * 20px) + (2 * 8px) = 256px<br>
+           Total height: 100px + (2 * 20px) + (2 * 8px) = 156px */<br>
+      }<br><br>
+
+      The total width of an element should be calculated like this:<br>
+
+Total element width = width + left padding + right padding + left border + right border + left margin + right margin<br>
+
+The total height of an element should be calculated like this:<br>
+
+Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin<br>
+    </p2>
+    <p>With the above  knowledge you will be able to know how much space your element will occupy</p>
+<h3>The Box</h3>
+<div class="box">
+    <p> 
+        <img src="emoji.jpeg" alt="content"><br><br>
+    </p>
+</div>
+<div class="box">
+    <p> 
+        <img src="emoji.jpeg" alt="content"><br><br>
+    </p>
+</div>
+</body>
+</html>
